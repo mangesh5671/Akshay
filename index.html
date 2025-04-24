@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akashic Productions</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main gallery container */
+.gallery-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+/* Three column structure */
+.left-column, .middle-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-column {
+    flex: 2;
+}
+
+.middle-column {
+    flex: 2.8;
+}
+
+.right-column {
+    flex: 2.2;
+}
+
+/* Base styling for all gallery items */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+/* Logo item */
+.logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    height: 250px;
+    width: 330px;
+    padding-left: 50px;
+}
+
+.logo-item img {
+    object-fit: cover;
+}
+
+/* Height adjustments for different items */
+.person-white {
+    height: 450px;
+    padding-top: -40px;
+}
+
+.water-object {
+    height: 600px;
+}
+
+.person-field {
+    height: 350px;
+}
+
+.light-object {
+    height: 350px;
+}
+
+.food-dish {
+    height: 350px;
+}
+
+.gold-object {
+    height: 350px;
+}
+
+.temple-ruins {
+    height: 710px;
+    object-fit: cover;
+}
+
+.lamp-table {
+    height: 600px;
+}
+
+/* Services Section */
+.services {
+    margin-bottom: 60px;
+    margin-left: -60px;
+}
+
+.services ul {
+    list-style-type: none;
+}
+
+.services li {
+    margin-bottom: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+/* Tagline */
+.tagline {
+    text-align: right;
+    margin-bottom: 30px;
+    margin-right: -60px;
+}
+
+.bold-tagline {
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -60px;
+    margin-left: -60px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Preserve the desktop layout */
+    .gallery-container {
+        display: flex;
+        flex-direction: row; /* Force row layout on mobile */
+        gap: 5px;
+        width: 100%;
+    }
+    
+    .left-column, .middle-column, .right-column {
+        gap: 5px;
+        /* Maintain the same proportions as desktop */
+    }
+    
+    /* Adjust heights proportionally for mobile */
+    .logo-item {
+        height: 80px;
+        width: 100%;
+        max-width: 330px;
+        padding-left: 1px;
+    }
+    
+    .person-white {
+        height: 131px;
+        aspect-ratio: 1/1.5; /* Maintain proportion */
+    }
+    
+    .water-object {
+        height: 190px;
+        aspect-ratio: 1/2; /* Maintain proportion */
+    }
+    
+    .person-field, .light-object, .food-dish, .gold-object {
+        height: 105px;
+        aspect-ratio: 1/1.2; /* Maintain proportion */
+    }
+    
+    .temple-ruins {
+        height: 213px;
+        aspect-ratio: 1/2.4; /* Maintain proportion */
+    }
+    
+    .lamp-table {
+        height: 190px;
+        aspect-ratio: 1/2; /* Maintain proportion */
+    }
+    
+    /* Adjust text sizes for mobile */
+    .services li {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    
+    .services {
+        margin-left: -1px;
+    }
+
+    .bold-tagline {
+        font-size: 12px;
+    }
+    
+    .tagline {
+        margin-right: -1px;
+    }
+
+    .footer {
+        margin-left: 1px;
+        margin-top: -45px;
+    }
+    
+    .social-icons {
+        gap: 15px;
+    }
+    
+    .social-icons img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .gallery-container {
+        gap: 3px;
+    }
+    
+    .left-column, .middle-column, .right-column {
+        gap: 3px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Gallery with three columns -->
+        <div class="gallery-container">
+            <!-- Left Column - 3 images -->
+            <div class="left-column">
+                <div class="gallery-item logo-item">
+                    <img src="./Black Beige Typography Dance School Logo 2.PNG" alt="AKASHIC PRODUCTIONS Logo">
+                </div>
+                <div class="gallery-item person-white">
+                    <img src="./Feels like magic (1080 x 1350 px) - 2.PNG" alt="Person in white garment">
+                </div>
+                <div class="gallery-item water-object">
+                    <img src="./IMG_0209.jpeg" alt="Metallic structure in water">
+                </div>
+            </div>
+            
+            <!-- Middle Column - 4 images -->
+            <div class="middle-column">
+                <div class="gallery-item person-field">
+                    <img src="./IMG_0128.JPG" alt="Person in rural setting">
+                </div>
+                <div class="gallery-item light-object">
+                    <img src="./IMG_0236.JPG" alt="Dark object with light">
+                </div>
+                <div class="gallery-item food-dish">
+                    <img src="./IMG_0119.JPeG" alt="Food dish">
+                </div>
+                <div class="gallery-item gold-object">
+                    <img src="./IMG_0046.jpeg" alt="Golden object">
+                </div>
+            </div>
+            
+            <!-- Right Column - 2 images -->
+            <div class="right-column">
+                <div class="gallery-item temple-ruins">
+                    <img src="./IMG_0116.JPG" alt="Person at ancient temple">
+                </div>
+                <div class="gallery-item lamp-table">
+                    <img src="./IMG_9024.jpeg" alt="Lamp and table">
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services">
+            <ul>
+                <li>LIGHT / SET / SOUND DESIGN</li>
+                <li>CINEMATIC VISUALS</li>
+                <li>GRAPHICS AND TYPOGRAPHY</li>
+                <li>PODCAST PRODUCTION</li>
+                <li>PERSONAL BRANDING</li>
+                <li>CONTENT ANALYSIS AND CONSULTANCY</li>
+            </ul>
+        </div>
+
+        <!-- Tagline -->
+        <div class="tagline">
+            <p class="bold-tagline">WE SEE BEYOND VISUALS</p>
+            <p class="bold-tagline">WE PRODUCE BEYOND CONTENT</p>
+        </div>
+
+        <!-- Footer with Social Icons -->
+        <div class="footer">
+            <div class="social-icons">
+                <a href="#"><img src="./insta.png" alt="Instagram"></a>
+                <a href="#"><img src="./mail.png" alt="Email"></a>
+                <a href="#"><img src="./call.png" alt="Phone"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for fade-in effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            galleryItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                setTimeout(() => {
+                    item.style.transition = 'opacity 0.5s ease';
+                    item.style.opacity = '1';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
+</html>
